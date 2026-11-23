@@ -1,3 +1,8 @@
+---
+name: herdr-app
+description: Drive the person's window.
+---
+
 # herdr-app: drive the person's window
 
 Herdr shows spaces, tabs and panes. herdr-core (`hc`) runs their terminals

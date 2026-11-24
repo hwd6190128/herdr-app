@@ -32,8 +32,8 @@ pre-release: test docs-check
     fi
     echo; echo "Since $last:"; git log --oneline "$last"..HEAD
     echo
-    if git diff --quiet "$last"..HEAD -- src/SKILL.md; then
-      echo "review: the agent manual (herdr-app --skill, src/SKILL.md) is unchanged since $last. Does it still match the changes above?"
+    if git diff --quiet "$last"..HEAD -- src/manual.md; then
+      echo "review: the agent manual (herdr-app --skill, src/manual.md) is unchanged since $last. Does it still match the changes above?"
     else
       echo "review: the agent manual (herdr-app --skill) changed since $last. Read it once more."
     fi

@@ -127,7 +127,7 @@ fn main() {
         None if control::raise_running() => return,
         None => {}
         Some("-h" | "--help" | "help") => return print!("{HELP}"),
-        Some("--skill") => return print!("{}", include_str!("SKILL.md")),
+        Some("--skill") => return print!("{}", include_str!("manual.md")),
         Some("-V" | "--version" | "version") => return println!("herdr-app {}", env!("CARGO_PKG_VERSION")),
         Some(other) => {
             eprint!("herdr-app: unknown argument {other:?}\n\n{HELP}");
